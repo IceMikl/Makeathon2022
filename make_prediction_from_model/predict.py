@@ -63,17 +63,17 @@ def load_model(model_path, device):
     'efficient_net': EfficientNetBx
     }
     model = MODEL_DISPATCHER['efficient_net'](pretrained=False)
-    model.load_state_dict(torch.load(model_path))
+    model.load_state_dict(torch.load(model_path, map_location=device))
     model = model.to(device)
     return model
 
 
-def load_image(image_path, aug):
+def load_image(image_path, aug, device):
     image = np.array(Image.open(image_path))
     augmented = aug(image=image)
     image = augmented['image']
     image = np.transpose(image, (2, 0, 1)).astype(np.float32)
-    image = torch.tensor(image, dtype=torch.float).to('cuda').unsqueeze(0)
+    image = torch.tensor(image, dtype=torch.float).to(device).unsqueeze(0)
     return image
 
 def predict_one(model, image):
@@ -91,7 +91,7 @@ def make_prediction(image_path):
     #define augmentation
     aug = create_augmentations()
     model = load_model(PATH_TO_MODEL, device)
-    image = load_image(image_path, aug)
+    image = load_image(image_path, aug, device)
 
     return predict_one(model, image)
 
