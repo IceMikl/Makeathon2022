@@ -25,7 +25,6 @@ from efficientnet_pytorch import EfficientNet
 PATH_TO_MODEL = 'efficientnet-b3_fold_0_200_0.9026687240037569.bin'
 
 
-
 #Efficient Net model class
 class EfficientNetBx(nn.Module):
     def __init__(self, pretrained=True, arch_name='efficientnet-b3', ce=False):
@@ -80,11 +79,11 @@ def load_image(image_path, aug):
 def predict_one(model, image):
     model.eval()
     with torch.no_grad():
-
         prediction = model(image)
-        return torch.sigmoid(prediction)
-
-
+        probability = 200*torch.sigmoid(prediction).item()
+        if probability>100: probability = 100
+        if probability<0: probability = 0
+        return int(probability)
 
 def make_prediction(image_path):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -98,8 +97,9 @@ def make_prediction(image_path):
 
 
 def main():
-    print(make_prediction('melanoma.jpg').item())
-    print(make_prediction('not_melanoma.jpg').item())
+
+    print(make_prediction('melanoma.jpg'))
+    print(make_prediction('not_melanoma.jpg'))
 
 if __name__ == '__main__':
     main()
