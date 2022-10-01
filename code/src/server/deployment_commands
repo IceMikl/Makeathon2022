@@ -1,0 +1,7 @@
+zip -r server.zip . -x '.??*'
+
+az login
+
+RESOURCE_GROUP_NAME='melanome-resource-group'
+APP_SERVICE_NAME='melanome-detection-server'
+az webapp deploy --name $APP_SERVICE_NAME --resource-group $RESOURCE_GROUP_NAME --type zip --src-path server.zip
