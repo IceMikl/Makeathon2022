@@ -3,8 +3,13 @@ from flask import Flask, request, Response, jsonify
 
 app = Flask(__name__)
 
-@app.route('/check_image', methods=['POST'])
+@app.route('/test', methods=['GET'])
 def hello():
+    return "Hello, World!", 200
+
+
+@app.route('/check_image', methods=['POST'])
+def check_image():
     melanoma_image = request.files.get('melanoma_image', '')
     print(melanoma_image)
     __check_melanoma_image(melanoma_image=melanoma_image)
