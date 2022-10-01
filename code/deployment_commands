@@ -1,0 +1,15 @@
+zip -r server.zip . -x '.??*'
+
+zip server.zip server.py predict.py efficientnet-b3_fold_0_200_0.9026687240037569.bin requirements.txt
+zip server.zip server.py efficientnet-b3_fold_0_200_0.9026687240037569.bin
+zip server.zip server.py tmp/test.txt
+
+az login
+
+RESOURCE_GROUP_NAME='melanome-resource-group'
+APP_SERVICE_NAME='melanome-detection-server'
+az webapp deploy --name $APP_SERVICE_NAME --resource-group $RESOURCE_GROUP_NAME --type zip --restart true --src-path server.zip
+
+az webapp create-remote-connection --subscription 6d74c9cb-3abe-48d4-940b-0fbb8db34f08 --resource-group melanome-resource-group -n melanome-detection-server &
+
+https://melanome-detection-server.scm.azurewebsites.net/webssh/host
