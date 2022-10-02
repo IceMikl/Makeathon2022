@@ -12,11 +12,11 @@ import Combine
 class Model {
     var networkManager = NetworkManager()
     
-    func makeTestRequest() {
+    func makeTestRequest() -> Future<String?, Never> {
         networkManager.makeGetRequest(endpoint: APIEndpoints.test.rawValue)
     }
     
-    func checkImage(image: Data) -> Future<CheckImageResponse, Error> {
-        networkManager.uploadImage(image: image, to: APIEndpoints.checkImageTest.rawValue, imageName: "skin.png", imageKey: "image")
+    func checkImage(image: Data) -> Future<CheckImageResponse, Never> {
+        networkManager.uploadImage(image: image, to: APIEndpoints.postImage.rawValue, imageName: "skin.png", imageKey: "melanoma_image")
     }
 }

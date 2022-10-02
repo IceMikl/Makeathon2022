@@ -9,8 +9,9 @@ import SwiftUI
 import Combine
 
 class HomeViewModel: ObservableObject {
-    @Published var result: Double?
+    @Published var result: String?
     @Published var capturedImage: UIImage?
+    @Published var resultImage: UIImage?
     
     @Published var isCameraShown: Bool = false
     @Published var isPhotoPickerShown: Bool = false
@@ -20,11 +21,14 @@ class HomeViewModel: ObservableObject {
     
     init(model: Model) {
         self.model = model
-        self.result = 69
     }
     
     func test() {
         Model().makeTestRequest()
+            .sink(receiveCompletion: { _ in }, receiveValue: { response in
+                print(response ?? "Test response is empty")
+            })
+            .store(in: &cancellables)
     }
     
     func checkImage() {
@@ -32,7 +36,12 @@ class HomeViewModel: ObservableObject {
         
         Model().checkImage(image: imageData)
             .sink(receiveCompletion: {_ in }, receiveValue: { response in
-                self.result = response.result
+                if let imageData = response.imageData {
+                    if let image = UIImage(data: imageData) {
+                        self.resultImage = image
+                        self.result = response.probability
+                    }
+                }
             })
             .store(in: &cancellables)
     }

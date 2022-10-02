@@ -9,5 +9,5 @@ import Foundation
 
 enum APIEndpoints: String {
     case test = "test"
-    case checkImageTest = "check_image"
+    case postImage = "check_image"
 }

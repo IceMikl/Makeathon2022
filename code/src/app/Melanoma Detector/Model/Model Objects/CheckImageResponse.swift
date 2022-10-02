@@ -5,9 +5,9 @@
 //  Created by Murad Talibov on 02.10.22.
 //
 
-import Foundation
+import UIKit
 
-struct CheckImageResponse: Codable {
-    var result: Double
-    var image: String
+struct CheckImageResponse {
+    var probability: String?
+    var imageData: Data?
 }

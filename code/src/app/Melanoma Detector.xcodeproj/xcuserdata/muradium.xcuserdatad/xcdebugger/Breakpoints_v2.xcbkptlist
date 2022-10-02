@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "27646BC2-2F89-40A7-8D8E-C8357E0FA608"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F21E03F-BE8F-4C09-A34D-1296D29557BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Onboarding/View Model/OnboardingViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "nextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F651782-471D-499A-A5E7-2E26B08B2A15"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Onboarding/View Model/OnboardingViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "nextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51EC7BB2-1B4E-48CE-A864-98499BB7A86A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Model/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "makeTestRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "536D17BE-94DC-426F-BB4B-703E1C706EC1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Home/View Model/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "test()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F102A715-8924-4D30-A7F3-83AD04BDC956"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Model/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "makeTestRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9712F23-4CC4-4DB4-8A81-E117CAB935EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Home/View Model/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "test()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF11AAB0-B491-4CD2-87F3-C8901FD40157"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Model/Model.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "checkImage(image:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CA05B1B-6178-4929-A2F5-5E91EDFD0677"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Model/NetworkManager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "uploadImage(image:to:imageName:imageKey:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "922E8899-4BA9-4BBE-9F6D-DA9B12EA05F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Model/NetworkManager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "uploadImage(image:to:imageName:imageKey:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "922E8899-4BA9-4BBE-9F6D-DA9B12EA05F2 - 91bdaeba1f0fc256"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((Swift.Result&lt;Melanoma_Detector.CheckImageResponse, Swift.Error&gt;) -&gt; ()) -&gt; () in Melanoma_Detector.NetworkManager.uploadImage(image: Foundation.Data, to: Swift.String, imageName: Swift.String, imageKey: Swift.String) -&gt; Combine.Future&lt;Melanoma_Detector.CheckImageResponse, Swift.Error&gt;"
+                  moduleName = "Melanoma Detector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muradium/Desktop/Murad/Makeathon2022/Melanoma%20Detector/Melanoma%20Detector/Model/NetworkManager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "922E8899-4BA9-4BBE-9F6D-DA9B12EA05F2 - 5adc9cacf118adee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.MultipartFormData) -&gt; () in closure #1 ((Swift.Result&lt;Melanoma_Detector.CheckImageResponse, Swift.Error&gt;) -&gt; ()) -&gt; () in Melanoma_Detector.NetworkManager.uploadImage(image: Foundation.Data, to: Swift.String, imageName: Swift.String, imageKey: Swift.String) -&gt; Combine.Future&lt;Melanoma_Detector.CheckImageResponse, Swift.Error&gt;"
+                  moduleName = "Melanoma Detector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muradium/Desktop/Murad/Makeathon2022/Melanoma%20Detector/Melanoma%20Detector/Model/NetworkManager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F7FBAF4-1FAA-41D0-9A4F-7BD3C53DA368"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Home/View Model/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "checkImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F51223D7-38B8-451F-A53E-4BC3F0B97C4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Home/View Model/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "checkImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98FD41DC-2347-4DAB-A789-99E118488A9C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Home/View Model/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "checkImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "98FD41DC-2347-4DAB-A789-99E118488A9C - c18ca79202869880"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Melanoma_Detector.HomeViewModel.checkImage() -&gt; ()"
+                  moduleName = "Melanoma Detector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muradium/Desktop/Murad/Makeathon2022/Melanoma%20Detector/Melanoma%20Detector/Home/View%20Model/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "98FD41DC-2347-4DAB-A789-99E118488A9C - 9b01ef3ac3b7e877"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in Melanoma_Detector.HomeViewModel.checkImage() -&gt; ()"
+                  moduleName = "Melanoma Detector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muradium/Desktop/Murad/Makeathon2022/Melanoma%20Detector/Melanoma%20Detector/Home/View%20Model/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "98FD41DC-2347-4DAB-A789-99E118488A9C - 252a2c601040838a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Melanoma_Detector.CheckImageResponse) -&gt; () in Melanoma_Detector.HomeViewModel.checkImage() -&gt; ()"
+                  moduleName = "Melanoma Detector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muradium/Desktop/Murad/Makeathon2022/Melanoma%20Detector/Melanoma%20Detector/Home/View%20Model/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F148A14-5F25-4836-8B73-FBF952BC2FD9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Home/View Model/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "checkImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "086FD60D-9BAC-4BF9-AA6C-97096190FF1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Melanoma Detector/Home/View Model/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "checkImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "086FD60D-9BAC-4BF9-AA6C-97096190FF1C - 252a2c6010408ce3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Melanoma_Detector.CheckImageResponse) -&gt; () in Melanoma_Detector.HomeViewModel.checkImage() -&gt; ()"
+                  moduleName = "Melanoma Detector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muradium/Desktop/Murad/Makeathon2022/Melanoma%20Detector/Melanoma%20Detector/Home/View%20Model/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "086FD60D-9BAC-4BF9-AA6C-97096190FF1C - 252a2c6010408ce3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Melanoma_Detector.CheckImageResponse) -&gt; () in Melanoma_Detector.HomeViewModel.checkImage() -&gt; ()"
+                  moduleName = "Melanoma Detector"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muradium/Desktop/Murad/Makeathon2022/Melanoma%20Detector/Melanoma%20Detector/Home/View%20Model/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -16,7 +16,7 @@ enum OnboardingPage: Int, CaseIterable {
 
 class OnboardingViewModel: ObservableObject {
     @Published var currentPage = OnboardingPage.welcome
-    @Published var isOnboardingFinished = true
+    @Published var isOnboardingFinished = false
     
     func nextPage() {
         if let nextPage = OnboardingPage(rawValue: currentPage.rawValue + 1) {
