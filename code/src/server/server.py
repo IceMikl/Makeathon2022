@@ -1,5 +1,5 @@
 
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, send_file, make_response
 from predict import make_prediction
 from torchvision.utils import save_image
 
@@ -29,8 +29,12 @@ def check_image():
         "probability": str(probability),
         "image_bytes": get_response_image(path_to_analyzed_image)
     }
-    # return send_file(melanoma_image_result_path, mimetype='image/jpeg')
-    return jsonify(data), 200
+    # return send_file(path_to_analyzed_image, mimetype='image/jpeg')
+    response = make_response(send_file(path_to_analyzed_image, mimetype='image/jpeg'))
+    response.headers['probability'] = str(probability)
+    #response.status = 200
+    return response
+    #return jsonify(data), 200
 
 
 def get_response_image(image_path):
