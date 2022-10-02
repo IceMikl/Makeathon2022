@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F20581428E73C440069A14C /* Melanoma_DetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20581328E73C440069A14C /* Melanoma_DetectorApp.swift */; };
+		8F20581628E73C440069A14C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20581528E73C440069A14C /* ContentView.swift */; };
+		8F20581828E73C450069A14C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F20581728E73C450069A14C /* Assets.xcassets */; };
+		8F20581B28E73C450069A14C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F20581A28E73C450069A14C /* Preview Assets.xcassets */; };
+		8F20582328E748DE0069A14C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20582228E748DE0069A14C /* OnboardingView.swift */; };
+		8F20582628E7494B0069A14C /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20582528E7494B0069A14C /* OnboardingViewModel.swift */; };
+		8F20582A28E7570B0069A14C /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F20582828E7570B0069A14C /* Gilroy-ExtraBold.otf */; };
+		8F20582B28E7570B0069A14C /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F20582928E7570B0069A14C /* Gilroy-Light.otf */; };
+		8F20583028E759C20069A14C /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20582F28E759C20069A14C /* OnboardingContent.swift */; };
+		8F20583328E75A810069A14C /* Font+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20583228E75A810069A14C /* Font+CustomFonts.swift */; };
+		8F20583528E7619D0069A14C /* OnboardingNextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20583428E7619D0069A14C /* OnboardingNextButton.swift */; };
+		8F20583828E773AB0069A14C /* OnboardingPreviousButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20583728E773AB0069A14C /* OnboardingPreviousButton.swift */; };
+		8FD44B5628E81C070092E2B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B5528E81C070092E2B0 /* HomeView.swift */; };
+		8FD44B5928E81CAF0092E2B0 /* RoundedBackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B5828E81CAF0092E2B0 /* RoundedBackgroundViewModifier.swift */; };
+		8FD44B5B28E81E3A0092E2B0 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B5A28E81E3A0092E2B0 /* ResultView.swift */; };
+		8FD44B5E28E81F160092E2B0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B5D28E81F160092E2B0 /* HomeViewModel.swift */; };
+		8FD44B6028E8240B0092E2B0 /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B5F28E8240B0092E2B0 /* ScanButton.swift */; };
+		8FD44B6228E82D0A0092E2B0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B6128E82D0A0092E2B0 /* CameraView.swift */; };
+		8FD44B6428E83C130092E2B0 /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B6328E83C130092E2B0 /* PhotoPickerView.swift */; };
+		8FD44B6828E8437E0092E2B0 /* PickPhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B6728E8437E0092E2B0 /* PickPhotoButton.swift */; };
+		8FD44B6B28E849DD0092E2B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B6A28E849DD0092E2B0 /* Model.swift */; };
+		8FD44B6F28E84AFE0092E2B0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B6E28E84AFE0092E2B0 /* APIEndpoints.swift */; };
+		8FD44B7228E84C6A0092E2B0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD44B7128E84C6A0092E2B0 /* NetworkManager.swift */; };
+		8FD44B7528E918B00092E2B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8FD44B7428E918B00092E2B0 /* Alamofire */; };
+		8FDA764B28E950570031DD24 /* CheckImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDA764A28E950570031DD24 /* CheckImageResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F20581028E73C440069A14C /* Melanoma Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Melanoma Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F20581328E73C440069A14C /* Melanoma_DetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melanoma_DetectorApp.swift; sourceTree = "<group>"; };
+		8F20581528E73C440069A14C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F20581728E73C450069A14C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F20581A28E73C450069A14C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F20582228E748DE0069A14C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8F20582528E7494B0069A14C /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		8F20582828E7570B0069A14C /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		8F20582928E7570B0069A14C /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
+		8F20582C28E758490069A14C /* Melanoma-Detector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Melanoma-Detector-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8F20582F28E759C20069A14C /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		8F20583228E75A810069A14C /* Font+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+CustomFonts.swift"; sourceTree = "<group>"; };
+		8F20583428E7619D0069A14C /* OnboardingNextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNextButton.swift; sourceTree = "<group>"; };
+		8F20583728E773AB0069A14C /* OnboardingPreviousButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPreviousButton.swift; sourceTree = "<group>"; };
+		8FD44B5528E81C070092E2B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8FD44B5828E81CAF0092E2B0 /* RoundedBackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBackgroundViewModifier.swift; sourceTree = "<group>"; };
+		8FD44B5A28E81E3A0092E2B0 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		8FD44B5D28E81F160092E2B0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8FD44B5F28E8240B0092E2B0 /* ScanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
+		8FD44B6128E82D0A0092E2B0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8FD44B6328E83C130092E2B0 /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		8FD44B6728E8437E0092E2B0 /* PickPhotoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPhotoButton.swift; sourceTree = "<group>"; };
+		8FD44B6A28E849DD0092E2B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8FD44B6E28E84AFE0092E2B0 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		8FD44B7128E84C6A0092E2B0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8FDA764A28E950570031DD24 /* CheckImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckImageResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F20580D28E73C440069A14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD44B7528E918B00092E2B0 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F20580728E73C440069A14C = {
+			isa = PBXGroup;
+			children = (
+				8F20581228E73C440069A14C /* Melanoma Detector */,
+				8F20581128E73C440069A14C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F20581128E73C440069A14C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F20581028E73C440069A14C /* Melanoma Detector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F20581228E73C440069A14C /* Melanoma Detector */ = {
+			isa = PBXGroup;
+			children = (
+				8FD44B6928E849C10092E2B0 /* Model */,
+				8FD44B5728E81C9D0092E2B0 /* View Modifiers */,
+				8F20583128E75A6E0069A14C /* Extensions */,
+				8F20582728E756F90069A14C /* Fonts */,
+				8F20582128E748CF0069A14C /* Onboarding */,
+				8FD44B5428E81BFD0092E2B0 /* Home */,
+				8F20581328E73C440069A14C /* Melanoma_DetectorApp.swift */,
+				8F20581528E73C440069A14C /* ContentView.swift */,
+				8F20582C28E758490069A14C /* Melanoma-Detector-Info.plist */,
+				8F20581728E73C450069A14C /* Assets.xcassets */,
+				8F20581928E73C450069A14C /* Preview Content */,
+			);
+			path = "Melanoma Detector";
+			sourceTree = "<group>";
+		};
+		8F20581928E73C450069A14C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F20581A28E73C450069A14C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F20582128E748CF0069A14C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8F20582428E7493F0069A14C /* View Model */,
+				8F20582228E748DE0069A14C /* OnboardingView.swift */,
+				8F20582F28E759C20069A14C /* OnboardingContent.swift */,
+				8F20583428E7619D0069A14C /* OnboardingNextButton.swift */,
+				8F20583728E773AB0069A14C /* OnboardingPreviousButton.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8F20582428E7493F0069A14C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F20582528E7494B0069A14C /* OnboardingViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		8F20582728E756F90069A14C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8F20583628E76CF50069A14C /* Gilroy */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8F20583128E75A6E0069A14C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F20583228E75A810069A14C /* Font+CustomFonts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F20583628E76CF50069A14C /* Gilroy */ = {
+			isa = PBXGroup;
+			children = (
+				8F20582828E7570B0069A14C /* Gilroy-ExtraBold.otf */,
+				8F20582928E7570B0069A14C /* Gilroy-Light.otf */,
+			);
+			path = Gilroy;
+			sourceTree = "<group>";
+		};
+		8FD44B5428E81BFD0092E2B0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FD44B6D28E84A290092E2B0 /* Home Elements */,
+				8FD44B5C28E81F0A0092E2B0 /* View Model */,
+				8FD44B5528E81C070092E2B0 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8FD44B5728E81C9D0092E2B0 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				8FD44B5828E81CAF0092E2B0 /* RoundedBackgroundViewModifier.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		8FD44B5C28E81F0A0092E2B0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FD44B5D28E81F160092E2B0 /* HomeViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		8FD44B6928E849C10092E2B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FD44B7028E84C580092E2B0 /* NetworkManager */,
+				8FD44B6C28E84A000092E2B0 /* Model Objects */,
+				8FD44B6A28E849DD0092E2B0 /* Model.swift */,
+				8FD44B6E28E84AFE0092E2B0 /* APIEndpoints.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FD44B6C28E84A000092E2B0 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				8FDA764A28E950570031DD24 /* CheckImageResponse.swift */,
+			);
+			path = "Model Objects";
+			sourceTree = "<group>";
+		};
+		8FD44B6D28E84A290092E2B0 /* Home Elements */ = {
+			isa = PBXGroup;
+			children = (
+				8FD44B5A28E81E3A0092E2B0 /* ResultView.swift */,
+				8FD44B5F28E8240B0092E2B0 /* ScanButton.swift */,
+				8FD44B6728E8437E0092E2B0 /* PickPhotoButton.swift */,
+				8FD44B6128E82D0A0092E2B0 /* CameraView.swift */,
+				8FD44B6328E83C130092E2B0 /* PhotoPickerView.swift */,
+			);
+			path = "Home Elements";
+			sourceTree = "<group>";
+		};
+		8FD44B7028E84C580092E2B0 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8FD44B7128E84C6A0092E2B0 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F20580F28E73C440069A14C /* Melanoma Detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F20581E28E73C450069A14C /* Build configuration list for PBXNativeTarget "Melanoma Detector" */;
+			buildPhases = (
+				8F20580C28E73C440069A14C /* Sources */,
+				8F20580D28E73C440069A14C /* Frameworks */,
+				8F20580E28E73C440069A14C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Melanoma Detector";
+			packageProductDependencies = (
+				8FD44B7428E918B00092E2B0 /* Alamofire */,
+			);
+			productName = "Melanoma Detector";
+			productReference = 8F20581028E73C440069A14C /* Melanoma Detector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F20580828E73C440069A14C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8F20580F28E73C440069A14C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F20580B28E73C440069A14C /* Build configuration list for PBXProject "Melanoma Detector" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F20580728E73C440069A14C;
+			packageReferences = (
+				8FD44B7328E918B00092E2B0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 8F20581128E73C440069A14C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F20580F28E73C440069A14C /* Melanoma Detector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F20580E28E73C440069A14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F20581B28E73C450069A14C /* Preview Assets.xcassets in Resources */,
+				8F20581828E73C450069A14C /* Assets.xcassets in Resources */,
+				8F20582B28E7570B0069A14C /* Gilroy-Light.otf in Resources */,
+				8F20582A28E7570B0069A14C /* Gilroy-ExtraBold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F20580C28E73C440069A14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD44B5628E81C070092E2B0 /* HomeView.swift in Sources */,
+				8FD44B6228E82D0A0092E2B0 /* CameraView.swift in Sources */,
+				8F20582328E748DE0069A14C /* OnboardingView.swift in Sources */,
+				8FD44B6028E8240B0092E2B0 /* ScanButton.swift in Sources */,
+				8FD44B6F28E84AFE0092E2B0 /* APIEndpoints.swift in Sources */,
+				8FD44B5B28E81E3A0092E2B0 /* ResultView.swift in Sources */,
+				8F20583028E759C20069A14C /* OnboardingContent.swift in Sources */,
+				8FDA764B28E950570031DD24 /* CheckImageResponse.swift in Sources */,
+				8F20583328E75A810069A14C /* Font+CustomFonts.swift in Sources */,
+				8F20581628E73C440069A14C /* ContentView.swift in Sources */,
+				8F20583528E7619D0069A14C /* OnboardingNextButton.swift in Sources */,
+				8FD44B5E28E81F160092E2B0 /* HomeViewModel.swift in Sources */,
+				8FD44B6B28E849DD0092E2B0 /* Model.swift in Sources */,
+				8F20583828E773AB0069A14C /* OnboardingPreviousButton.swift in Sources */,
+				8FD44B5928E81CAF0092E2B0 /* RoundedBackgroundViewModifier.swift in Sources */,
+				8F20581428E73C440069A14C /* Melanoma_DetectorApp.swift in Sources */,
+				8FD44B6828E8437E0092E2B0 /* PickPhotoButton.swift in Sources */,
+				8FD44B7228E84C6A0092E2B0 /* NetworkManager.swift in Sources */,
+				8FD44B6428E83C130092E2B0 /* PhotoPickerView.swift in Sources */,
+				8F20582628E7494B0069A14C /* OnboardingViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8F20581C28E73C450069A14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F20581D28E73C450069A14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F20581F28E73C450069A14C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Melanoma Detector/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WF46Z4X52;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Melanoma-Detector-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamai.Melanoma-Detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F20582028E73C450069A14C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Melanoma Detector/Preview Content\"";
+				DEVELOPMENT_TEAM = 7WF46Z4X52;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Melanoma-Detector-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teamai.Melanoma-Detector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F20580B28E73C440069A14C /* Build configuration list for PBXProject "Melanoma Detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F20581C28E73C450069A14C /* Debug */,
+				8F20581D28E73C450069A14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F20581E28E73C450069A14C /* Build configuration list for PBXNativeTarget "Melanoma Detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F20581F28E73C450069A14C /* Debug */,
+				8F20582028E73C450069A14C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FD44B7328E918B00092E2B0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FD44B7428E918B00092E2B0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FD44B7328E918B00092E2B0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8F20580828E73C440069A14C /* Project object */;
+}
