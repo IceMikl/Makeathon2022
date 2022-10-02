@@ -1,5 +1,5 @@
 
-from flask import Flask, request, Response, jsonify
+from flask import Flask, request, jsonify, send_file
 from predict import make_prediction
 
 app = Flask(__name__)
@@ -21,6 +21,7 @@ def check_image():
         "processing_time": 0,
         "results": str(results)
     }
+    # return send_file(melanoma_image_result_path, mimetype='image/jpeg')
     return jsonify(data), 200
 
 
