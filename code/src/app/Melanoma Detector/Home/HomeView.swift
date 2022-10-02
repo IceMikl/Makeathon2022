@@ -16,17 +16,26 @@ struct HomeView: View {
                 ResultView()
                 PickPhotoButton()
                 ScanButton()
-                Button(action: { viewModel.test() }) {
-                    Text("Make test request")
-                        .foregroundColor(.white)
-                        .roundedBackground(color: Color("Dark Blue"))
-                }
-                if let image = viewModel.capturedImage {
-                    Image(uiImage: image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 300)
-                        .cornerRadius(20)
+                HStack {
+                    if let image = viewModel.capturedImage {
+                        Image(uiImage: image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 150, height: 200)
+                            .roundedBackground(color: .gray.opacity(0.1))
+                    } else {
+                        Spacer()
+                    }
+                    if let resultImage = viewModel.resultImage {
+                        Image(uiImage: resultImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 150, height: 200)
+                            .cornerRadius(20)
+                            .roundedBackground(color: .gray.opacity(0.1))
+                    } else {
+                        Spacer()
+                    }
                 }
                 Spacer()
             }

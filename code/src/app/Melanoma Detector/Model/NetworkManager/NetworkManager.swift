@@ -33,17 +33,20 @@ class NetworkManager {
         }
     }
     
-    func makeGetRequest(endpoint: String?) {
-        let url = getUrl(endpoint: endpoint)
-        let request = AF.request(url)
-        request.responseString { (data) in
-            if let response = data.value {
-                print(response)
+    func makeGetRequest(endpoint: String?) -> Future<String?, Never> {
+        Future { promise in
+            let url = self.getUrl(endpoint: endpoint)
+            let request = AF.request(url)
+            request.responseString { data in
+                if let response = data.value {
+                    promise(.success(response))
+                }
+                promise(.success(nil))
             }
         }
     }
     
-    func uploadImage(image: Data, to endpoint: String, imageName: String, imageKey: String) -> Future<CheckImageResponse, Error> {
+    func uploadImage(image: Data, to endpoint: String, imageName: String, imageKey: String) -> Future<CheckImageResponse, Never> {
         Future { promise in
             let url = self.getUrl(endpoint: endpoint)
             
@@ -53,11 +56,13 @@ class NetworkManager {
                 .uploadProgress(queue: .main, closure: { progress in
                     print("Upload Progress: \(progress.fractionCompleted)")
                 })
-                .responseDecodable(of: CheckImageResponse.self, completionHandler: { response in
-                    guard let response = response.value else { return }
-                    promise(.success(response))
-                })
+                .responseData { response in
+                    var checkImageResponse = CheckImageResponse(probability: nil, imageData: response.data)
+                    if let probability = response.response?.allHeaderFields["probability"] as? String {
+                        checkImageResponse.probability = probability
+                    }
+                    promise(.success(checkImageResponse))
+                }
         }
-        
     }
 }
