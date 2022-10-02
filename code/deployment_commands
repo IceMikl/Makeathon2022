@@ -1,8 +1,5 @@
 zip -r server.zip . -x '.??*'
-
-zip server.zip server.py predict.py efficientnet-b3_fold_0_200_0.9026687240037569.bin requirements.txt
-zip server.zip server.py efficientnet-b3_fold_0_200_0.9026687240037569.bin
-zip server.zip server.py tmp/test.txt
+zip server.zip server.py predict.py gradcam.py model.py utils.py melornotdata_resnet_50.ckpt requirements.txt
 
 az login
 

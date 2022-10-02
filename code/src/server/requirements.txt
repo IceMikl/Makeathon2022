@@ -10,3 +10,5 @@ pytz==2022.2.1
 torchvision==0.13.1
 pretrainedmodels==0.7.4
 efficientnet_pytorch==0.7.1
+
+pytorch-lightning==1.7.7

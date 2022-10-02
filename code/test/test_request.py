@@ -4,7 +4,6 @@ import json
 
 
 #url = 'http://localhost:5566/'
-
 url = 'https://melanome-detection-server.azurewebsites.net/'
 
 url_test = url + 'test'
